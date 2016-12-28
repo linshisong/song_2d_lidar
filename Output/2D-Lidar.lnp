@@ -1,0 +1,21 @@
+--cpu Cortex-M4.fp
+".\output\main.o"
+".\output\stm32f30x_it.o"
+".\output\systick.o"
+".\output\startup_stm32f302x8.o"
+".\output\system_stm32f30x.o"
+".\output\stm32f30x_adc.o"
+".\output\stm32f30x_dma.o"
+".\output\stm32f30x_gpio.o"
+".\output\stm32f30x_i2c.o"
+".\output\stm32f30x_usart.o"
+".\output\stm32f30x_tim.o"
+".\output\stm32f30x_rcc.o"
+".\output\stm32f30x_exti.o"
+".\output\i2c.o"
+".\output\led.o"
+".\output\uart.o"
+--library_type=microlib --strict --scatter ".\Output\2D-Lidar.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\2D-Lidar.map" -o .\Output\2D-Lidar.axf
